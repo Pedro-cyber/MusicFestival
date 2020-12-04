@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Metal Murcia Festival</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">
+            <div class="logo">
+                <div class="logo-M1 lights color-red">M</div>
+                <div class="logo-M2 lights color-blue">M</div>
+                <div class="logo-F lights color-yellow">F</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <a href="/bands.html">
+                    <li class="link color-red">Bandas</li>
+                </a>
+                <a href="/blog.html">
+                    <li class="link color-red">Blog</li>
+                </a>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form id="contact" method="POST" name="contact" data-netlify="true">
+            <fieldset>
+                <legend class="color-white">Datos de contacto</legend>
+                <p class="color-white">Todos los campos son obligatorios</p>
+                <div>
+                    <label class="color-white" for="nombre">Nombre y apellidos</label>
+                    <input id="nombre" type="text" name="nombre" required pattern="[a-zA-ZñÑáàéèíìóòúùÁÀÉÈÍÌÓÒÚÙüÜ\s]+">
+                </div>
+                <div>
+                    <label class="color-white"  for="email">Correo electrónico</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div>
+                    <label class="color-white"  for="telefono">Teléfono</label>
+                    <input id="telefono" type="tel" name="telefono" required minlength="9">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="color-white" >Asunto</legend>
+                <div>
+                    <label class="color-white"  for="asunto">Selecciona un asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">&nbsp;</option>
+                        <option value="entradas">Compra y gestión de entradas</option>
+                        <option value="festival">Información sobre el festival</option>
+                        <option value="alojamiento">Información sobre alojamiento</option>
+                        <option value="otros">Otras solicitudes</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="color-white" for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+            </fieldset>
+            <div class="proteccion">
+                <input type="checkbox" name="datos" id="datos" required>
+                <label class="color-white"  for="datos">Acepto <a href="">la política de protección de datos</a></label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div class="logo">
+            <div class="logo-M1 lights color-red">M</div>
+            <div class="logo-M2 lights color-blue">M</div>
+            <div class="logo-F lights color-yellow">F</div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <a href="/bands.html">
+                    <li class="link color-red">Bandas</li>
+                </a>
+                <a href="/blog.html">
+                    <li class="link color-red">Blog</li>
+                </a>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <div class="footer-social">
+            <i class="fab fa-facebook-square color-red"></i>
+            <i class="fab fa-google-plus-square color-blue"></i>
+            <i class="fab fa-twitter-square color-yellow"></i>
+        </div>
+    </footer>
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

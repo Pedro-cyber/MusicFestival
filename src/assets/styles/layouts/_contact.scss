@@ -1,0 +1,111 @@
+form {
+  padding-bottom: 10vw;
+}
+
+fieldset {
+  margin-top: 8vw;
+  width: 95%;
+}
+
+legend {
+  font-size: 6vw;
+  margin-left: 2vw;
+}
+
+label {
+  margin-left: 2vw;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 0.4vw solid $color-yellow;
+  border-radius: 0.8vw;
+  margin: 2vw;
+}
+
+form div + div {
+  margin-top: 5vw;
+}
+
+textarea {
+  height: 50vw;
+}
+
+input[type="checkbox"] {
+  width: 2vw;
+  margin-left: 3vw;
+}
+
+button {
+  width: 98%;
+  margin: 1vw;
+}
+
+.proteccion {
+  display: flex;
+}
+
+@media screen and (min-width: 700px) {
+  legend,
+  button {
+    font-size: 3vw;
+  }
+
+  .proteccion label {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  label {
+    font-size: 1.5vw;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 43vw;
+    font-size: 1.5vw;
+    border: 0.4vw solid $color-yellow;
+    border-radius: 0.8vw;
+    margin: 2vw;
+  }
+
+  fieldset {
+    width: 100%;
+    margin-top: 2vw;
+    border: 0.1vw solid $color-yellow;
+    border-radius: 0.4vw;
+  }
+
+  form div + div {
+    margin-top: 2vw;
+  }
+
+  textarea {
+    height: 20vw;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 0;
+  }
+
+  button,
+  legend {
+    font-size: 2vw;
+  }
+
+  button {
+    width: 100%;
+    margin: 0;
+  }
+}
